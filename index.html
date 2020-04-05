@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Youtube app
+    </title>
+    <script src="./js/application.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body class="m-4">
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Logo_of_YouTube_%282005-2011%29.svg" width="300px">
+    </header>
+    <main class="mt-5">
+      <form>
+          <label>
+            Search for a video
+          </label>
+          <input type="text" id="input_text">
+          <button type="button" id="search" class="btn btn-secondary">
+            Search
+          </button>
+      </form>
+    </main>
+    <section class="results mt-4">
+      <ul class="list-group" id="items"></ul>
+    </section>
+  </body>
+  <template id="item_template">
+    <li class="list-group-item list-group-item-primary m-2">
+      <p class="item-name d-block font-italic"></p>
+      <div class="buttons d-block">
+        <button type="button" class="btn btn-light check">
+          check
+        </button>
+        <button type="button" class="btn btn-light delete">
+          delete
+        </button>
+      </div>
+    </li>
+  </template>
+</html>

@@ -16,27 +16,16 @@
           <label>
             Search for a video
           </label>
-          <input type="text" id="input_text">
+          <input type="text" id="query">
           <button type="button" id="search" class="btn btn-secondary">
             Search
           </button>
       </form>
     </main>
-    <section class="results mt-4">
-      <ul class="list-group" id="items"></ul>
+    <section class="mt-4 d-flex flex-wrap" id="results">
     </section>
+    <div class="text-center">
+      <button type="button" class="btn btn-link d-none" data-next-page-token="" id="see_more">See more</button>
+    </div>
   </body>
-  <template id="item_template">
-    <li class="list-group-item list-group-item-primary m-2">
-      <p class="item-name d-block font-italic"></p>
-      <div class="buttons d-block">
-        <button type="button" class="btn btn-light check">
-          check
-        </button>
-        <button type="button" class="btn btn-light delete">
-          delete
-        </button>
-      </div>
-    </li>
-  </template>
 </html>
